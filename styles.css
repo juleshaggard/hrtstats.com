@@ -102,8 +102,8 @@ h2 {
 
 h1 {
   max-width: 860px;
-  font-size: clamp(54px, 9vw, 112px);
-  line-height: 0.96;
+  font-size: clamp(42px, 6.4vw, 82px);
+  line-height: 1;
 }
 
 h2 {
