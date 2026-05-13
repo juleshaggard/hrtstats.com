@@ -28,11 +28,51 @@ main {
   margin: 0 auto;
 }
 
+.site-nav {
+  width: min(1040px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 26px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.site-nav a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.site-nav nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.site-nav nav a,
+.brand span,
+.footer-links a {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand img {
+  width: 28px;
+  height: auto;
+  display: block;
+}
+
 .hero {
-  min-height: 88vh;
+  min-height: calc(88vh - 56px);
   display: grid;
   align-content: center;
-  padding: 96px 0 64px;
+  padding: 82px 0 64px;
   position: relative;
 }
 
@@ -129,20 +169,8 @@ p {
   margin-top: 30px;
 }
 
-.toplink {
-  padding: 32px 0 0;
-}
-
-.toplink a,
-.footer-links a {
-  color: var(--ink);
-  font-size: 14px;
-  font-weight: 800;
-  text-decoration: none;
-}
-
 .page-hero {
-  padding: 128px 0 64px;
+  padding: 104px 0 64px;
 }
 
 .text-page {
@@ -161,6 +189,11 @@ p {
   display: flex;
   gap: 24px;
   padding-bottom: 80px;
+}
+
+.footer-links a {
+  color: var(--ink);
+  text-decoration: none;
 }
 
 .updated {
@@ -210,6 +243,10 @@ a {
 
 @media (max-width: 800px) {
   main {
+    width: min(100% - 32px, 620px);
+  }
+
+  .site-nav {
     width: min(100% - 32px, 620px);
   }
 
